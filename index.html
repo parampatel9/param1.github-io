@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>PORTFOLIO.</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skill">skill</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-contact">
+                <div class="text-1">Hello I'm</div>
+                <div class="text-2">Param Patel</div>
+                <div class="text-3">Web Developer</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="aboutMe">
+            <h1 class="title">About Me</h1>
+            <div class="temp">
+                <h4>I'm a web devloper</h4>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing iam, ipsam modi? Distinctio, aperiam excepturi.
+                    Doloremque suso reiciendis minus, ipsum quisquam illum, quia voluptates delectus animi at itaque
+                    expedita atque quas.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="skill" id="skill" style="height: 750px;">
+
+
+        <div class="container" >
+            <div class="row">
+                <div class="skill-col-1">
+                    <img src="1.jpeg" alt="">
+
+                </div>
+                <div class="skill-col-2">
+                    <h1>Skill</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis, laborum repudiandae sed
+                        ad, minima consequuntur officia vero dicta, cumque sequi delectus blanditiis quis aliquid quam
+                        eligendi vitae deserunt corporis?</p>
+                    <ul style="list-style: none; margin-left: 160px; margin-right: 200px;">
+                        <li>
+                            <span class="new">html</span>
+                            <span class="persent">
+                                <div style="width: 60%;"></div>
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="new2">css</span>
+                            <span class="persent">
+                                <div style="width: 50%;"></div>
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="new3">c</span>
+                            <span class="persent">
+                                <div style="width: 70%;"></div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-2">
+
+            <img src="7.jpg" alt="">
+        </div>
+    </section>
+
+
+    <div class="contact" id="contact" >
+        <div class="container" >
+            <div class="row" >
+                <div class="contact-left" style="text-align: center;">
+                    <h2 class="main" >contact me</h2>
+                    <p><i class="fa fa-paper-plane-o" aria-hidden="true"></i>parampatel50329@gmail.com</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i>+91 9408290355</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/invites/contact/?i=zmout0lwxhwv&utm_content=350kb8e"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <h4 style="color: white; text-align: center;">send your response</h4>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="message" rows="5" placeholder="your massage"></textarea>
+                        <button type="submit" class="btn"> send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2023 Param Patel</p>
+    </footer>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxPt9fZP-trrmM5-ZS9podfUkK-DlOucxI2b1ELMkR3sRT36vcx8CzhP2_X-d6-PFpbZA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+
+</body>
+
+</html>
