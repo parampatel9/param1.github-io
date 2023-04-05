@@ -109,7 +109,7 @@ header nav ul li a {
     font-size: 20px;
 }
 
-.container{
+.skill{
     background-color: aliceblue;
 }
 
@@ -125,7 +125,7 @@ header nav ul li a {
 }
 
 .skill-col-1 img{
-   margin-top: 150px;
+   margin-top: 200px;
    margin-left: 100px;
     width: 550px;
     border-radius: 10px;
@@ -276,14 +276,11 @@ form btn{
 
 
 
-#msg{
+/* #msg{
     color: aquamarine;
     margin-top: -20px;
     display: block;
-}
-
-
-
+} */
 
 
 

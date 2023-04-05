@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>Portfolio</title>
     <link rel="stylesheet" href="portfolio.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -31,7 +33,7 @@
             <div class="home-contact">
                 <div class="text-1">Hello I'm</div>
                 <div class="text-2">Param Patel</div>
-                <div class="text-3">Web Developer</div>
+                <div class="text-3">Software Engineer</div>
             </div>
         </div>
 
@@ -41,17 +43,21 @@
         <div class="aboutMe">
             <h1 class="title">About Me</h1>
             <div class="temp">
-                <h4>I'm a web devloper</h4>
+                <h4>I'm a Software Engineer</h4>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing iam, ipsam modi? Distinctio, aperiam excepturi.
-                    Doloremque suso reiciendis minus, ipsum quisquam illum, quia voluptates delectus animi at itaque
-                    expedita atque quas.</p>
+                <p>I am student at GMIU,Bhavnagar. I am currently pursuing Computer Engineering. I am eager to learn new things and grow as a Software Engineer.<br><br>
+
+
+                    As a student of Computer Engineering,I am deeply interested in the technical side of Computing and Software Engineering. Through my course work and personal projects,I have gained a strong foundation in programming languages such as java and python. <br><br><br>
+                    
+                    
+                    While I am still a student, I have had the opportunity to work on a number of real-world projects with fellow students and industry professionals. These experiences have allowed me to develop my communication and collaboration skills, as well as gain valuable insight into the software development process. <br></p>
             </div>
 
         </div>
     </section>
 
-    <section class="skill" id="skill" style="height: 750px;">
+    <section class="skill" id="skill" style="height: 755px;">
 
 
         <div class="container" >
@@ -62,28 +68,47 @@
                 </div>
                 <div class="skill-col-2">
                     <h1>Skill</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis, laborum repudiandae sed
-                        ad, minima consequuntur officia vero dicta, cumque sequi delectus blanditiis quis aliquid quam
-                        eligendi vitae deserunt corporis?</p>
+                    <p>I am good at Software Engineering and also in Web development.Areas of my expertise are the fields of html, css and javascript.I can also work with python, MySQL and PHP</p>
                     <ul style="list-style: none; margin-left: 160px; margin-right: 200px;">
                         <li>
-                            <span class="new">html</span>
+                            <span class="new">c</span>
                             <span class="persent">
-                                <div style="width: 60%;"></div>
+                                <div style="width: 75%;"></div>
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="new2">java</span>
+                            <span class="persent">
+                                <div style="width: 65%;"></div>
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="new3">html</span>
+                            <span class="persent">
+                                <div style="width: 80%;"></div>
                             </span>
                         </li>
 
                         <li>
                             <span class="new2">css</span>
                             <span class="persent">
+                                <div style="width: 70%;"></div>
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="new2">javascript</span>
+                            <span class="persent">
                                 <div style="width: 50%;"></div>
                             </span>
                         </li>
 
                         <li>
-                            <span class="new3">c</span>
+                            <span class="new2">python</span>
                             <span class="persent">
-                                <div style="width: 70%;"></div>
+                                <div style="width: 40%;"></div>
                             </span>
                         </li>
                     </ul>
@@ -113,9 +138,9 @@
                     <p><i class="fa fa-phone" aria-hidden="true"></i>+91 9408290355</p>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/invites/contact/?i=zmout0lwxhwv&utm_content=350kb8e"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/param-patel-2634b3251"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100091506998786"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/parampatel27?t=TyNuWybq8l_haWH0eg_j4w&s=09"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="contact-right">
@@ -148,10 +173,10 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "message sent successfully"
+                msg.innerHTML = ""
                 setTimeout(function(){
                     msg.innerHTML = ""
-                },5000)
+                },3000)
                 form.reset()
             })
             .catch(error => console.error('Error!', error.message))
