@@ -196,13 +196,44 @@
     border-radius: 5px;
 }
 
-
-.portfolio-img{
-    width: 100dvw;
-    height: 90svh;
-    padding: 20px 5%;
-    background: url("3.jpg") no-repeat center / cover;
+.portfolioimg{
+  display: flex;
 }
+
+.portfolio-img1{
+    width: 50dvw;
+    height: 50svh;
+    padding: 20px 5%;
+    background: url("4.jpg") no-repeat center / cover;
+}
+
+.portfolio-img2{
+  width: 50dvw;
+  height: 50svh;
+  padding: 20px 5%;
+  background: url("5.jpg") no-repeat center / cover;
+}
+
+.portfolio-img3{
+  width: 50dvw;
+  height: 50svh;
+  padding: 20px 5%;
+  background: url("6.jpg") no-repeat center / cover;
+}
+
+.portfolio-img4{
+  width: 50dvw;
+  height: 50svh;
+  padding: 20px 5%;
+  background: url("7.jpg") no-repeat center / cover;
+}
+.portfolio-img5{
+  width: 50dvw;
+  height: 50svh;
+  padding: 20px 5%;
+  background: url("8.jpg") no-repeat center / cover;
+}
+
 
 
 
